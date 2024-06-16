@@ -1,0 +1,77 @@
+body {
+  background-color: #f8f9fa;
+  padding-bottom: 70px; /* Adicionando padding inferior para evitar que a navbar sobreponha o conteúdo */
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 15px; /* Adicionando bordas arredondadas ao card */
+}
+
+.card .card-body {
+  border-radius: 15px; /* Adicionando bordas arredondadas ao corpo do card */
+  overflow: hidden; /* Garantindo que o conteúdo do card também fique arredondado */
+}
+
+.card .eye-icon {
+  float: right;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.list-group-item {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.btn-light {
+  border-radius: 50%;
+}
+
+.navbar.fixed-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+.nav-item .fas {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.nav-item p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 70px; /* Altura da navbar */
+  right: 15px;
+  z-index: 11;
+}
+
+@media (min-width: 992px) {
+  .btn-light {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn-light i {
+    font-size: 2rem;
+  }
+}
